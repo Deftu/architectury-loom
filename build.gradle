@@ -22,7 +22,7 @@ tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
 	}
 }
 
-group = "gg.essential"
+group = "dev.deftu"
 def baseVersion = '1.11'
 
 def ENV = System.getenv()
@@ -278,7 +278,7 @@ codenarc {
 gradlePlugin {
 	plugins {
 		fabricLoom {
-			id = 'gg.essential.loom'
+			id = 'dev.deftu.gradle.loom'
 			implementationClass = 'net.fabricmc.loom.LoomGradlePlugin'
 		}
 	}
