@@ -325,7 +325,7 @@ publishing {
 	repositories {
 		if (System.getenv("NEXUS_USER") != null) {
 			maven {
-				url = "https://repo.essential.gg/public"
+				url = "https://maven.deftu.dev/releases"
 				name = "nexus-public"
 				credentials {
 					username = System.getenv("NEXUS_USER")
