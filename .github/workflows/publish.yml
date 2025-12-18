@@ -7,10 +7,12 @@ on:
       - 'dev/1.9'
       - 'dev/1.10'
       - 'dev/1.11'
+  workflow_dispatch: 
 
 jobs:
   build:
     runs-on: ubuntu-24.04
+    environment: Release
     steps:
       - name: setup jdk
         uses: actions/setup-java@v4
